@@ -1,0 +1,68 @@
+/* 90's Style Website */
+
+body {
+    background-color: #007B7F; /* Darker Cyan */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text {
+    font-size: 24px;
+    color: #800080; /* Darker Magenta */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #FFFF00; /* Yellow text shadow */
+}
+
+.button {
+    background-color: #FF1493; /* Hot pink */
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px #000000;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #FFFF00; /* Bright Yellow */
+    color: #000000;
+}
+
+.image-container {
+    display: none;
+    margin-top: 20px;
+}
+
+img {
+    width: 400px;
+    border: 3px solid #0000FF; /* Blue border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the hidden checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* When checkbox is checked, hide the text and show the image */
+.toggle-checkbox:checked ~ #text {
+    display: none;
+}
+
+.toggle-checkbox:checked ~ .button {
+    display: none;
+}
+
+.toggle-checkbox:checked ~ .image-container {
+    display: block;
+}
